@@ -20,7 +20,11 @@ services:
     depends_on:
       - db
     image: wordpress:latest
-    volumes: ['./html:/var/www/html']
+    volumes:
+      [
+        './html:/var/www/html',
+        './upload.ini:/usr/local/etc/php/conf.d/uploads.ini',
+      ]
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
