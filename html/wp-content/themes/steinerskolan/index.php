@@ -6,6 +6,12 @@
 
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
+        <div>
+            <?php if (has_post_thumbnail()) {
+                the_post_thumbnail('medium');
+            } ?>
+        </div>
+
         <?php the_excerpt(); ?>
 
     <?php endwhile; ?>
