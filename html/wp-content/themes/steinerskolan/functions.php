@@ -5,6 +5,7 @@ declare(strict_types=1);
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
     add_theme_support('menus');
+    add_theme_support('post-thumbnails');
 });
 
 add_action('wp_enqueue_scripts', function () {
@@ -19,3 +20,13 @@ add_theme_support('editor-styles');
 
 // Enqueue editor styles.
 add_editor_style('editor.css');
+
+add_theme_support(
+    'custom-logo',
+    array(
+        'height'      => 190,
+        'width'       => 190,
+        'flex-width'  => false,
+        'flex-height' => false,
+    )
+);
