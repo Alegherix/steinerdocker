@@ -11,7 +11,13 @@
 <body class="loading" <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <?php $menuItems = wp_get_nav_menu_items('Menu'); ?>
+
+  <!--  <?php $menuItems = wp_get_nav_menu_items('Menu'); ?> -->
+
+  <?php $testMenu = get_menu('Menu'); ?>
+
+  <!-- <?php var_dump($testMenu); ?> -->
+
   <header>
 
     <?php if (has_custom_logo()) : ?>
@@ -33,11 +39,22 @@
     <nav class="navbar">
       <ul class="navbar-nav">
         <?php $currentPageId = $wp_query->queried_object_id;
-        foreach ($menuItems as $item) : ?>
+        foreach ($testMenu as $item) : ?>
           <li class="nav-item">
             <a class="nav-link<?= $item->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $item->url; ?>">
               <?= $item->title; ?>
             </a>
+            <?php if ($item->children > 0) : ?>
+              <ul class="navbar-nav">
+                <?php foreach ($item->children as $childItem) : ?>
+                  <li class="nav-item">
+                    <a class="nav-link<?= $childItem->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $childItem->url; ?>">
+                      <?= $childItem->title; ?>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
           </li>
         <?php endforeach; ?>
       </ul>

@@ -1,0 +1,55 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-hero .wp-block-image {
+  margin-bottom: 3rem;
+}
+@media (min-width: 700px) {
+  .wp-block-create-block-hero .wp-block-image {
+    width: 100%;
+    height: 39.375vw;
+  }
+}
+@media (min-width: 1000px) {
+  .wp-block-create-block-hero .wp-block-image {
+    width: 100%;
+    height: 33.75vw;
+  }
+}
+.wp-block-create-block-hero .wp-block-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: inherit;
+  height: inherit;
+}
+.wp-block-create-block-hero h1,
+.wp-block-create-block-hero h2 {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  /* word-wrap: break-word; */
+  padding: 0 1rem;
+}
+.wp-block-create-block-hero p {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

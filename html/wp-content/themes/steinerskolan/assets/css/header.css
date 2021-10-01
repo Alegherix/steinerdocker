@@ -109,3 +109,9 @@ header nav ul li {
 .loading .navbar {
   transition: none;
 }
+
+.custom-logo {
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+}

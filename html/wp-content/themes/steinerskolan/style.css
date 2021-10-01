@@ -31,14 +31,17 @@ main {
   flex-direction: column;
 }
 
-.custom-logo {
-  width: 270px;
-  height: auto;
-  padding: 0.5rem;
+.font-page {
+  width: 100%;
 }
 
+/* .font-page .wp-block-img {
+  width: 100%;
+  height: calc(60vw * 9 / 16);
+} */
+
 /* Hero image styling  */
-.hero-wrapper {
+/* .hero-wrapper {
   width: 100%;
   height: calc(60vw * 9 / 16);
 }
@@ -48,9 +51,9 @@ main {
   object-position: center;
   width: inherit;
   height: inherit;
-}
+} */
 
-.wp-block-image {
+/* .wp-block-image {
   width: 100%;
   height: calc(60vw * 9 / 16);
 }
@@ -60,38 +63,4 @@ main {
   object-position: center;
   width: inherit;
   height: inherit;
-}
-
-/* Frontpage news styling  */
-.news-section {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 2rem 0;
-}
-.news-section h2 {
-  margin-bottom: 2rem;
-}
-.news-section-grid {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-@media screen and (min-width: 800px) {
-  .news-section-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 700px;
-  }
-}
-.news-article {
-  padding: 2rem;
-  background-color: white;
-}
-
-.news-article a {
-  text-decoration: none;
-  color: black;
-}
+} */

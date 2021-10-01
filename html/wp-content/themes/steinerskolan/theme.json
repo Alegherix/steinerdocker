@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "styles": {
+    "blocks": {
+      "core/paragraph": {
+        "color": {
+          "text": "black"
+        }
+      }
+    }
+  }
+}
