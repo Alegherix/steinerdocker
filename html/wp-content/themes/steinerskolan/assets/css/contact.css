@@ -6,6 +6,10 @@
   padding: 0.5rem 0;
 }
 
+.contact-page .wp-block-column h1 {
+  margin-bottom: 4rem;
+}
+
 .contact-image {
   width: 100%;
   height: 300px;

@@ -7,6 +7,9 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-create-block-contact-block {
+  margin-bottom: 2rem;
+}
 .wp-block-create-block-contact-block p {
   line-height: 1.5rem;
 }

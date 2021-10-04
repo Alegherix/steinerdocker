@@ -26,7 +26,7 @@ export default function save({ attributes }) {
 	const { title, body } = attributes;
 	return (
 		<div {...useBlockProps.save()}>
-			<h2>{title}</h2>
+			<h3>{title}</h3>
 			<RichText.Content tagName="p" value={body} />
 		</div>
 	);
