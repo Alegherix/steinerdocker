@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-Detta är default page
 <div class="row">
   <div class="col">
     <?php if (have_posts()) : ?>
