@@ -16,7 +16,6 @@
 
   <?php $testMenu = get_menu('Menu'); ?>
 
-  <!-- <?php var_dump($testMenu); ?> -->
 
   <header>
 

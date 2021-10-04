@@ -1,0 +1,19 @@
+.contact-page {
+  max-width: 1000px;
+}
+
+.contact-page .wp-block-column > * {
+  padding: 0.5rem 0;
+}
+
+.contact-image {
+  width: 100%;
+  height: 300px;
+}
+
+.contact-image img {
+  object-fit: cover;
+  object-position: center;
+  width: inherit;
+  height: inherit;
+}

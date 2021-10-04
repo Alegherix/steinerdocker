@@ -35,32 +35,6 @@ main {
   width: 100%;
 }
 
-/* .font-page .wp-block-img {
-  width: 100%;
-  height: calc(60vw * 9 / 16);
-} */
-
-/* Hero image styling  */
-/* .hero-wrapper {
-  width: 100%;
-  height: calc(60vw * 9 / 16);
+p {
+  line-height: 1.5rem;
 }
-
-.hero-img {
-  object-fit: cover;
-  object-position: center;
-  width: inherit;
-  height: inherit;
-} */
-
-/* .wp-block-image {
-  width: 100%;
-  height: calc(60vw * 9 / 16);
-}
-
-.wp-block-image img {
-  object-fit: cover;
-  object-position: center;
-  width: inherit;
-  height: inherit;
-} */
