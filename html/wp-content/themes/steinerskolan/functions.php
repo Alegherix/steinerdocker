@@ -35,6 +35,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', true, '1.1', 'all');
     wp_enqueue_style('news', get_template_directory_uri() . '/assets/css/news.css', true, '1.1', 'all');
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css', true, '1.1', 'all');
+    wp_enqueue_style('apply', get_template_directory_uri() . '/assets/css/apply.css', true, '1.1', 'all');
     wp_enqueue_script('hamburger', get_template_directory_uri() . '/assets/js/hamburger.js', '', '', true);
     wp_enqueue_script('loading', get_template_directory_uri() . '/assets/js/loading.js', '', '', true);
 });

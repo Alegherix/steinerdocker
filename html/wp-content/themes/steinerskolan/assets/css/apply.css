@@ -1,0 +1,32 @@
+section {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 84px;
+  /* background-color: white; */
+}
+
+h1 {
+  font-size: 31px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 23px;
+  font-weight: bold;
+}
+
+.wp-block-buttons {
+  justify-content: center;
+}
+
+.wp-block-button__link {
+  margin: auto;
+  margin: 44px 0px;
+  padding: 1rem 2.5rem;
+  width: 180px;
+  width: '100%';
+}
