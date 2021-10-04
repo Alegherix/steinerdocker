@@ -2,12 +2,16 @@
   max-width: 1000px;
 }
 
+.contact-page .wp-block-columns {
+  margin-bottom: 3.5rem;
+}
 .contact-page .wp-block-column > * {
   padding: 0.5rem 0;
 }
 
-.contact-page .wp-block-column h1 {
-  margin-bottom: 4rem;
+.contact-page .wp-block-column h2:first-child,
+h1:first-child {
+  margin-bottom: 3rem;
 }
 
 .contact-image {
@@ -20,4 +24,8 @@
   object-position: center;
   width: inherit;
   height: inherit;
+}
+
+.bus-column {
+  margin-top: 2.5rem;
 }

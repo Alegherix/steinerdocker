@@ -13,5 +13,8 @@
 .wp-block-create-block-contact-block p {
   line-height: 1.5rem;
 }
+.wp-block-create-block-contact-block h3 {
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=style-index.css.map*/
