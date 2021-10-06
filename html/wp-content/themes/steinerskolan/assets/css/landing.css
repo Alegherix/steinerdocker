@@ -55,6 +55,11 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+  justify-items: center;
+}
+
+.alumContainer p {
+  max-width: 360px;
 }
 
 .alumContainer h2 {
