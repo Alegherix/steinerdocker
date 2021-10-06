@@ -1,0 +1,20 @@
+.details {
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  .details {
+    max-height: 0px;
+    padding: 0 1rem;
+    transition: max-height 0.3s ease-in-out;
+    transition: padding 0.3s linear;
+    overflow: hidden;
+  }
+  .show-details {
+    max-height: 1000px;
+    padding: 1rem;
+  }
+
+  .rotate-icon {
+    transform: rotate(0.5turn);
+  }
+}

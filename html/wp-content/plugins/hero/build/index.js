@@ -52,18 +52,43 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function Edit() {
-  const MY_TEMPLATE = [["core/image", {
+function Edit({
+  attributes,
+  setAttributes
+}) {
+  const MY_TEMPLATE = [["core/cover", {
     placeholder: "Hero Image"
   }], ["core/heading", {
-    placeholder: "Hero Title"
+    placeholder: "Hero Title",
+    className: "hero-title"
   }], ["core/paragraph", {
-    placeholder: "Intro"
+    placeholder: "Intro",
+    className: "intro"
+  }], ["core/button", {
+    placeholder: "Button text",
+    className: "hero-button"
   }]];
-  const ALLOWED_BLOCKS = ["core/image", "core/paragraph"];
+  const {
+    title,
+    body
+  } = attributes;
+
+  function onChangeTitle(newTitle) {
+    setAttributes({
+      title: newTitle
+    });
+  }
+
+  function onChangeBody(newBody) {
+    setAttributes({
+      body: newBody
+    });
+  }
+
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    template: MY_TEMPLATE,
-    templateLock: "all"
+    template: MY_TEMPLATE
+    /* templateLock="all" */
+
   }));
 }
 
@@ -108,7 +133,20 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/hero', {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/hero", {
+  attributes: {
+    title: {
+      type: "string",
+      source: "html",
+      selector: "h1"
+    },
+    body: {
+      type: "string",
+      source: "html",
+      selector: "p"
+    }
+  },
+
   /**
    * @see ./edit.js
    */
@@ -164,7 +202,13 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function save() {
+function save({
+  attributes
+}) {
+  const {
+    title,
+    body
+  } = attributes;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
 }
 

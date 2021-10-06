@@ -8,3 +8,6 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("loading");
   }, 500);
 });
+
+
+

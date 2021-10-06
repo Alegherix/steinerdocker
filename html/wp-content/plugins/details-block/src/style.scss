@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-details-block {
+	width: 100%;
+	max-width: 600px;
+	padding: 0 0.5rem;
+
+	@media (min-width: 600px) {
+		border-radius: 0px;
+		max-width: 900px;
+		margin-bottom: 2.5rem;
+	}
+
+	.details-summary {
+		padding: 1.5rem;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (min-width: 600px) {
+			border-radius: 0px;
+			padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+		}
+	}
+
+	.details-content-wrapper {
+		margin-top: 1rem;
+		flex-direction: column;
+
+		@media (min-width: 600px) {
+			margin-top: 0rem;
+			padding: 0 1.5rem 2.5rem 1.5rem;
+		}
+	}
+
+	@media (min-width: 600px) {
+		.icon {
+			display: none;
+		}
+	}
+}

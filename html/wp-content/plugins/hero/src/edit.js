@@ -11,7 +11,7 @@ import { __ } from "@wordpress/i18n";
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
+import { useBlockProps, InnerBlocks, RichText } from "@wordpress/block-editor";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,18 +29,42 @@ import "./editor.scss";
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit({ attributes, setAttributes }) {
 	const MY_TEMPLATE = [
-		["core/image", { placeholder: "Hero Image" }],
-		["core/heading", { placeholder: "Hero Title" }],
-		["core/paragraph", { placeholder: "Intro" }],
+		["core/cover", { placeholder: "Hero Image" }],
+		["core/heading", { placeholder: "Hero Title", className: "hero-title" }],
+		["core/paragraph", { placeholder: "Intro", className: "intro" }],
+		["core/button", { placeholder: "Button text", className: "hero-button" }],
 	];
 
-	const ALLOWED_BLOCKS = ["core/image", "core/paragraph"];
+	const { title, body } = attributes;
+
+	function onChangeTitle(newTitle) {
+		setAttributes({ title: newTitle });
+	}
+
+	function onChangeBody(newBody) {
+		setAttributes({ body: newBody });
+	}
+
 	return (
 		<div {...useBlockProps()}>
-			{/* <InnerBlocks allowedBlocks={ALLOWED_BLOCKS} /> */}
-			<InnerBlocks template={MY_TEMPLATE} templateLock="all" />
+			<InnerBlocks template={MY_TEMPLATE} /* templateLock="all" */ />
+			{/* <RichText
+				key="editable"
+				tagName="h1"
+				placeholder="Title"
+				value={title}
+				onChange={onChangeTitle}
+			/>
+			<RichText
+				key="editable"
+				tagName="p"
+				placeholder="Intro text"
+				value={body}
+				onChange={onChangeBody}
+				className="intro"
+			/> */}
 		</div>
 	);
 }

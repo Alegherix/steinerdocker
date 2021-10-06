@@ -11,7 +11,11 @@
 
 .contact-page .wp-block-column h2:first-child,
 h1:first-child {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-page .wp-block-column:first-child {
+  margin-bottom: 2rem;
 }
 
 .contact-image {
@@ -28,4 +32,17 @@ h1:first-child {
 
 .bus-column {
   margin-top: 2.5rem;
+}
+
+@media (min-width: 600px) {
+  .contact-page {
+    margin-top: 3rem;
+  }
+  .contact-page .wp-block-column:first-child {
+    margin-bottom: 0rem;
+  }
+  .contact-page .wp-block-column h2:first-child,
+  h1:first-child {
+    margin-bottom: 3rem;
+  }
 }

@@ -5,15 +5,24 @@
  */
 
 .wp-block-create-block-test-block {
-	width: 100%;
+	/* 	width: 100%;
 	height: calc(60vw * 9 / 16);
 	background-color: aliceblue;
-	margin: 0;
+	margin: 0; */
 }
 
 .wp-block-create-block-test-block img {
-	object-fit: cover;
+	/* 	object-fit: cover;
 	object-position: center;
 	width: inherit;
-	height: inherit;
+	height: inherit; */
 }
+/*
+.show {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+ */

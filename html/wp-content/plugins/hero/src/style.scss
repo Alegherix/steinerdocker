@@ -11,41 +11,37 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 
-	.wp-block-image {
-		margin-bottom: 3rem;
-
-		@media (min-width: 700px) {
-			width: 100%;
-			height: calc(70vw * 9 / 16);
-		}
-
-		@media (min-width: 1000px) {
-			width: 100%;
-			height: calc(60vw * 9 / 16);
-		}
-
-		img {
-			object-fit: cover;
-			object-position: center;
-			width: inherit;
-			height: inherit;
-		}
+	.block-editor-inner-blocks {
+		width: 100%;
 	}
 
-	h1,
-	h2 {
+	.hero-title {
 		width: 100%;
 		text-align: center;
-		margin: 1rem 0;
-		/* word-wrap: break-word; */
+		margin-top: 4rem;
 		padding: 0 1rem;
+		word-wrap: break-word;
 	}
 
-	p {
+	.intro {
 		max-width: 800px;
-		text-align: center;
+		/* text-align: center; */
 		line-height: 1.5rem;
 		padding: 0 1rem;
+		margin: 0 auto;
+	}
+
+	.hero-button {
+		margin: 0 auto;
+		.wp-block-button__link {
+			transition: ease-in-out 0.2s;
+			&:hover {
+				background-color: white;
+				color: black;
+				box-shadow: 0px 0px 0px 2px #000000;
+			}
+		}
 	}
 }

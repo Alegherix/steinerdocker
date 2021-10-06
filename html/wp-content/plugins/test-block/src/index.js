@@ -26,13 +26,13 @@ import save from "./save";
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType("create-block/test-block", {
-	attributes: {
+	/* 	attributes: {
 		heroImage: {
 			type: "string",
 			source: "html",
 			selector: "img",
 		},
-	},
+	}, */
 	/**
 	 * @see ./edit.js
 	 */

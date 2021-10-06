@@ -4,10 +4,20 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from "@wordpress/i18n";
+import {
+	useBlockProps,
+	RichText,
+	InspectorControls,
+	ColorPalette,
+	MediaUpload,
+} from "@wordpress/block-editor";
 
-const { RichText, InspectorControls, ColorPalette, MediaUpload } =
-	wp.blockEditor;
-const { PanelBody, Button } = wp.components;
+import { PanelBody, Button } from "@wordpress/components";
+
+import { Fragment, useEffect, useRef, useState } from "@wordpress/element";
+
+/* const { RichText, InspectorControls, ColorPalette, MediaUpload } =
+	wp.blockEditor; */
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -15,7 +25,6 @@ const { PanelBody, Button } = wp.components;
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from "@wordpress/block-editor";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -34,15 +43,41 @@ import "./editor.scss";
  * @return {WPElement} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { heroImage } = attributes;
+	const { heroImage, body } = attributes;
 
 	function onSelectImage(newImage) {
 		setAttributes({ heroImage: newImage.sizes.full.url });
 	}
 
+	function onChangeBody(newBody) {
+		setAttributes({ body: newBody });
+	}
+
+	/* 	const [open, setOpen] = useState(false);
+	const [detailsOpen, setDetailsOpen] = useState(false);
+
+	const handleToggle = () => {
+		setOpen(!open);
+		setDetailsOpen(!detailsOpen);
+	}; */
+
 	return (
 		<div {...useBlockProps()}>
-			<PanelBody title={"Hero Image Settings"}>
+			<details>
+				<summary>Details</summary>
+				<RichText
+					key="editable"
+					tagName="p"
+					placeholder="Enter body"
+					value={body}
+					onChange={onChangeBody}
+				/>
+			</details>
+
+			{/* <div onClick={handleToggle}>{open ? "open" : "close"}</div>
+				<div className={`${detailsOpen ? "show" : "hide"}`}>Test text</div> */}
+
+			{/* 	<PanelBody title={"Hero Image Settings"}>
 				<p>
 					<strong>Select a Hero Image:</strong>
 				</p>
@@ -62,7 +97,7 @@ export default function Edit({ attributes, setAttributes }) {
 				/>
 			</PanelBody>
 
-			<img src={heroImage} alt="image" />
+			<img src={heroImage} alt="image" />*/}
 		</div>
 	);
 }

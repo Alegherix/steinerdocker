@@ -18,7 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
 
 
 /**
@@ -27,23 +29,18 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 
-const {
-  RichText,
-  InspectorControls,
-  ColorPalette,
-  MediaUpload
-} = wp.blockEditor;
-const {
-  PanelBody,
-  Button
-} = wp.components;
+
+
+
+/* const { RichText, InspectorControls, ColorPalette, MediaUpload } =
+	wp.blockEditor; */
+
 /**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -67,7 +64,8 @@ function Edit({
   setAttributes
 }) {
   const {
-    heroImage
+    heroImage,
+    body
   } = attributes;
 
   function onSelectImage(newImage) {
@@ -76,22 +74,26 @@ function Edit({
     });
   }
 
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
-    title: "Hero Image Settings"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, "Select a Hero Image:")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
-    onSelect: onSelectImage,
-    type: "image",
-    value: heroImage,
-    render: ({
-      open
-    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
-      onClick: open,
-      className: "components-button block-editor-media-placeholder__button block-editor-media-placeholder__upload-button is-primary"
-    }, "Upload Image")
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: heroImage,
-    alt: "image"
-  }));
+  function onChangeBody(newBody) {
+    setAttributes({
+      body: newBody
+    });
+  }
+  /* 	const [open, setOpen] = useState(false);
+  const [detailsOpen, setDetailsOpen] = useState(false);
+  	const handleToggle = () => {
+  	setOpen(!open);
+  	setDetailsOpen(!detailsOpen);
+  }; */
+
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("details", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("summary", null, "Details"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagName: "p",
+    placeholder: "Enter body",
+    value: body,
+    onChange: onChangeBody
+  })));
 }
 
 /***/ }),
@@ -136,13 +138,13 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/test-block", {
-  attributes: {
-    heroImage: {
-      type: "string",
-      source: "html",
-      selector: "img"
-    }
-  },
+  /* 	attributes: {
+  	heroImage: {
+  		type: "string",
+  		source: "html",
+  		selector: "img",
+  	},
+  }, */
 
   /**
    * @see ./edit.js
@@ -189,6 +191,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
@@ -203,12 +206,34 @@ function save({
   attributes
 }) {
   const {
-    heroImage
+    body
   } = attributes;
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: heroImage,
-    alt: "image"
-  }));
+  /* 	const { heroImage } = attributes; */
+
+  /* 	const [open, setOpen] = useState(false); */
+  //const [detailsOpen, setDetailsOpen] = useState(false);
+
+  /* const handleToggle = () => {
+  	setOpen(true);
+  	//setDetailsOpen(!detailsOpen);
+  };
+  */
+
+  /* function toggleHamburger() {
+  	navbar.classList.toggle("show-nav");
+  	open.classList.toggle("hide-open");
+  	close.classList.toggle("show-close");
+  } */
+
+  /* const handleToggle = () => {
+  	const detailText = document.querySelector(".child");
+  	detailText.classList.toggle("show-me");
+  }; */
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("details", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("summary", null, "Details"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
+    tagName: "p",
+    value: body
+  }), "Something small enough to escape casual notice."));
 }
 
 /***/ }),
@@ -254,6 +279,16 @@ module.exports = window["wp"]["blockEditor"];
 /***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
+
+/***/ }),
+
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["components"];
 
 /***/ }),
 
