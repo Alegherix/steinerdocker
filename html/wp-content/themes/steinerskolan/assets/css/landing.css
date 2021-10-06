@@ -1,0 +1,87 @@
+.content {
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.dashboardGroup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  color: black;
+}
+
+.dashboardGroup div {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.dashboardGroup div:nth-child(1) a {
+  background-color: #f6cdc8;
+}
+
+.dashboardGroup div:nth-child(2) a {
+  background-color: #ddd8fa;
+}
+
+.dashboardGroup div:nth-child(3) a {
+  background-color: #ffefb6;
+}
+
+.dashboardGroup div:nth-child(4) a {
+  background-color: #d9ecd7;
+}
+
+.dashboardGroup a {
+  color: black;
+  margin: 0;
+  min-width: 160px;
+  min-height: 160px;
+
+  padding: 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardGroup div a:hover {
+  background-color: orange;
+}
+
+.alumWrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.alumContainer h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.alumContainer p {
+  margin-bottom: 4rem;
+  font-style: italic;
+}
+
+.alumContainer figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboardGroup {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+    color: black;
+  }
+
+  .alumWrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
