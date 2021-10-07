@@ -14,7 +14,6 @@ header {
   position: absolute;
   z-index: 1;
   right: 1rem;
-  width: 40px;
   border: none;
   cursor: pointer;
   background-color: transparent;

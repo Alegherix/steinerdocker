@@ -1,7 +1,7 @@
 .details {
   padding: 1rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .details {
     max-height: 0px;
     padding: 0 1rem;

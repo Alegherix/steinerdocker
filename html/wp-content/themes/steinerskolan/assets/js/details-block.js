@@ -8,6 +8,10 @@ function handleToggle(event) {
   if (target.className === "details-summary") {
     elementToShow = target.nextElementSibling;
     icon = target.querySelector(".icon");
+  } else if (target.className === "icon") {
+    /* elementToShow = target.parentElement; */
+
+    console.log(target);
   } else {
     elementToShow = target.querySelector(".details");
     icon = target.firstElementChild.querySelector(".icon");
