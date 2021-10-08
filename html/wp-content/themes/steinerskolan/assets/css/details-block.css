@@ -1,20 +1,35 @@
 .details {
   padding: 1rem;
 }
+
 @media (max-width: 800px) {
   .details {
     max-height: 0px;
     padding: 0 1rem;
-    transition: max-height 0.3s ease-in-out;
-    transition: padding 0.3s linear;
+    transition: max-height 0.2s linear;
+    transition: padding 0.1s ease-out;
     overflow: hidden;
   }
   .show-details {
-    max-height: 1000px;
-    padding: 1rem;
+    max-height: 3000px;
+    padding: 0 1rem 1.25rem 1rem;
   }
 
   .rotate-icon {
-    transform: rotate(0.5turn);
+    transform: rotate(-0.5turn);
+    transition: 0.1s ease-in-out;
+  }
+  .rotate-icon-second-click {
+    transform: rotate(0turn);
+    transition: 0.1s ease-in-out;
+  }
+
+  .body-text {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .fade-in-details-body-text {
+    opacity: 1;
   }
 }

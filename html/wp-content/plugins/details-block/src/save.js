@@ -27,11 +27,11 @@ export default function save({ attributes }) {
 	const { title, body, bodyColor } = attributes;
 
 	return (
-		<div {...useBlockProps.save()}>
-			<div style={{ backgroundColor: bodyColor }} class="details-summary">
+		<div style={{ backgroundColor: bodyColor }} {...useBlockProps.save()}>
+			<div class="details-summary summary-border-radius">
 				<h3>{title}</h3>
 				<svg
-					class="icon"
+					class="icon test"
 					width="23"
 					height="13"
 					viewBox="0 0 23 13"
@@ -58,11 +58,8 @@ export default function save({ attributes }) {
 					/>
 				</svg>
 			</div>
-			<div
-				style={{ backgroundColor: bodyColor }}
-				class="details details-content-wrapper"
-			>
-				<RichText.Content tagName="p" value={body} />
+			<div class="details details-content-wrapper">
+				<RichText.Content class="body-text" tagName="p" value={body} />
 			</div>
 		</div>
 	);
