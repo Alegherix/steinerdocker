@@ -17,6 +17,10 @@ ul {
   flex-direction: column;
 }
 
+.links ul{
+padding: 0;
+}
+
 .links ul li a {
   font-weight: bold;
   color: black;
@@ -27,4 +31,18 @@ ul {
   display: flex;
   list-style: none;
   gap: 1rem;
+  padding: 0;
+
+}
+
+@media only screen and (min-width: 768px) {
+   footer {
+     justify-content: center;
+     gap: 9rem;
+     flex-direction: row;
+     }
+  
+   .social {
+      flex-direction: column;
+     }
 }
