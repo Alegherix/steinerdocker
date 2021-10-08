@@ -1,3 +1,27 @@
 footer {
-  background: "#D8D5BB";
+  background: #EFECFD;
+  padding: 3rem 0;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.links{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.links ul li a {
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
