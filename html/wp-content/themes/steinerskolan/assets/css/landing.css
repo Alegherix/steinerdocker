@@ -59,6 +59,11 @@
   justify-items: center;
 }
 
+.alumContainer {
+  max-width: 337px;
+  border-radius: 6px;
+}
+
 .alumContainer p {
   max-width: 360px;
 }
@@ -73,10 +78,14 @@
 }
 
 .alumContainer figure img {
+  border-radius: 6px;
+}
+
+.alumContainer figure img {
   height: 337px;
   width: 337px;
   object-fit: cover;
-  border-radius: 6px;
+  
 }
 
 .wheelSection, .content h2, .content p{
