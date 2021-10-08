@@ -73,9 +73,10 @@
 }
 
 .alumContainer figure img {
-  width: 100%;
-  height: 280px;
+  height: 337px;
+  width: 337px;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .wheelSection, .content h2, .content p{
