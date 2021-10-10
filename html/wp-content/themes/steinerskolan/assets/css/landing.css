@@ -143,6 +143,26 @@
   padding-bottom: 1.4rem;
 }
 
+.dashboardGroup a.wp-block-button__link{
+  color: black !important;
+}
+
+.temaHeader {
+  margin-bottom: 1rem;
+}
+
+.eventImg {
+  margin-bottom: 70px;
+}
+
+.illustrationContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: #EBF3E2;
+    padding: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
   .dashboardGroup {
     display: grid;
@@ -168,7 +188,7 @@
   .reverse {
     flex-direction: row-reverse;
   }
-  
+
   .wheelSection, .content h2, .content p{
   text-align: center;
   }
