@@ -70,6 +70,7 @@
 
 .alumContainer h2 {
   text-align: center;
+  font-size: 20px;
 }
 
 .alumContainer p {
@@ -77,7 +78,7 @@
   font-style: italic;
 }
 
-.alumContainer figure img {
+.alumContainer figure {
   border-radius: 6px;
 }
 
@@ -98,6 +99,37 @@
   margin-bottom: 70px;
 }
 
+.lanSec {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.lanBlockImg {
+  z-index: 10;
+}
+
+.bgImg {
+  position: absolute;
+  display: none;
+}
+
+.lanBlockText{
+  z-index: 10;
+}
+
+.lanBlockText h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.lanBlockText p {
+    font-size: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
   .dashboardGroup {
     display: grid;
@@ -108,5 +140,14 @@
 
   .alumWrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lanSec {
+    flex-direction: row;
+    gap: 3.4rem;
+  }
+
+  .bgImg {
+    display: flex;
   }
 }
