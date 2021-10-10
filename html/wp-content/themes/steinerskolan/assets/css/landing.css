@@ -105,10 +105,13 @@
   position: relative;
   gap: 1.4rem;
   align-items: center;
+  margin-bottom: 5rem;
+  max-width: 1280px;
 }
 
 .lanBlockImg {
   z-index: 10;
+  border-radius: 6px;
 }
 
 .bgImg {
@@ -118,6 +121,7 @@
 
 .lanBlockText{
   z-index: 10;
+  padding: 0 1rem;
 }
 
 .lanBlockText h3 {
@@ -145,9 +149,14 @@
   .lanSec {
     flex-direction: row;
     gap: 3.4rem;
+    margin-bottom: 8rem;
   }
 
   .bgImg {
     display: flex;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
