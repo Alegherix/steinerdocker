@@ -58,18 +58,18 @@ export default function Edit({ attributes, setAttributes }) {
 				onChange={onChangeTitle}
 			/>
 			<RichText
-				className="contact-block-email"
-				value={email}
-				onChange={onChangeEmail}
-				tagName="a"
-				placeholder="Email"
-			/>
-			<RichText
 				className="contact-block-phone"
 				value={phone}
 				onChange={onChangePhone}
 				tagName="a"
 				placeholder="Phone"
+			/>
+			<RichText
+				className="contact-block-email"
+				value={email}
+				onChange={onChangeEmail}
+				tagName="a"
+				placeholder="Email"
 			/>
 			<RichText
 				className="contact-block-other"

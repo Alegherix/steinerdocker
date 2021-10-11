@@ -94,17 +94,17 @@ function Edit({
     value: title,
     onChange: onChangeTitle
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    className: "contact-block-email",
-    value: email,
-    onChange: onChangeEmail,
-    tagName: "a",
-    placeholder: "Email"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     className: "contact-block-phone",
     value: phone,
     onChange: onChangePhone,
     tagName: "a",
     placeholder: "Phone"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "contact-block-email",
+    value: email,
+    onChange: onChangeEmail,
+    tagName: "a",
+    placeholder: "Email"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     className: "contact-block-other",
     value: other,

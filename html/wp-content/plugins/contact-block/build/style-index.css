@@ -10,7 +10,7 @@
 .wp-block-create-block-contact-block {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  /* 	margin-bottom: 2rem; */
 }
 .wp-block-create-block-contact-block h3 {
   margin-bottom: 1rem;
