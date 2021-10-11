@@ -15,7 +15,9 @@
 }
 
 .contact-page .heading-work {
-  margin-bottom: 1.125rem;
+  /* margin-bottom: 1.125rem; */
+  margin-bottom: 1.4rem;
+  /* margin-bottom: 2.688rem; */
   line-height: 2rem;
 }
 
