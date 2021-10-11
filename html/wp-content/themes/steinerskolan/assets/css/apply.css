@@ -35,9 +35,13 @@ h2 {
   width: 180px;
 }
 
+.applyContainer {
+  z-index: -1;
+}
+
 .applyBtn a {
   background: #ddd8fa;
-  color: black;
+  color: black !important;
 }
 
 .applyText {
@@ -49,6 +53,9 @@ h2 {
   width: 768px;
   margin-left: -4rem;
   display: none;
+}
+
+.bgImage {
   z-index: -1;
 }
 
