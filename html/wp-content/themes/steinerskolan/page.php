@@ -1,15 +1,17 @@
 <?php get_header(); ?>
 
-<?php if (have_posts()) : ?>
+<div class="default-page">
+  <?php if (have_posts()) : ?>
 
-  <?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-    <h1><?php the_title(); ?></h1>
+      <section>
+        <h1><?php the_title(); ?></h1>
 
-    <?php the_content(); ?>
+        <?php the_content(); ?>
+      </section>
+    <?php endwhile; ?>
 
-  <?php endwhile; ?>
-
-<?php endif; ?>
-
+  <?php endif; ?>
+</div>
 <?php get_footer(); ?>

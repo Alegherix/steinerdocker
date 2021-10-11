@@ -32,10 +32,17 @@ registerBlockType("create-block/contact-block", {
 			source: "html",
 			selector: "h3",
 		},
-		body: {
+		email: {
 			type: "string",
-			source: "html",
-			selector: "p",
+			selector: "contact-block-email",
+		},
+		phone: {
+			type: "string",
+			selector: "contact-block-phone",
+		},
+		other: {
+			type: "string",
+			selector: "contact-block-other",
 		},
 	},
 	/**

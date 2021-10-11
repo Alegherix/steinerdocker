@@ -8,8 +8,6 @@ function handleToggle(event) {
   const elementToShowBodyText = detailsBlock.querySelector(".details p");
   const icon = detailsBlock.firstElementChild.querySelector(".icon");
 
-  /* icon.classList.add("rotate-icon"); */
-
   if (icon.classList.contains("rotate-icon")) {
     icon.classList.remove("rotate-icon");
     icon.classList.add("rotate-icon-second-click");
@@ -20,10 +18,6 @@ function handleToggle(event) {
 
   elementToShow.classList.toggle("show-details");
   elementToShowBodyText.classList.toggle("fade-in-details-body-text");
-
-  console.log(elementToShowBodyText);
-  /* console.log(summary);
-  summary.classList.toggle("toggle-summary-border-radius"); */
 }
 
 detailsSummary.forEach((element) => {

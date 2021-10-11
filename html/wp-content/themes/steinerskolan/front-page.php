@@ -1,22 +1,8 @@
 <?php get_header(); ?>
 
-<!-- <?php if (get_header_image()) : ?>
-    <div class="hero-wrapper">
-      <img class="hero-img " src="<?php header_image(); ?>" alt="" />
-    </div>
-  <?php endif; ?> -->
-
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-
-    <!-- <?php if (has_post_thumbnail()) : ?>
-
-            <div class="hero-wrapper">
-              <?php the_post_thumbnail('large', array('class' => 'hero-img')); ?>
-            </div>
-
-          <?php endif; ?> -->
 
     <?php the_content(); ?>
 

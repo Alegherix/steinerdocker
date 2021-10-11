@@ -30,14 +30,22 @@ import "./editor.scss";
  * @return {WPElement} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { title, body } = attributes;
+	const { title, email, phone, other } = attributes;
 
 	function onChangeTitle(newTitle) {
 		setAttributes({ title: newTitle });
 	}
 
-	function onChangeBody(newBody) {
-		setAttributes({ body: newBody });
+	function onChangeEmail(newEmail) {
+		setAttributes({ email: newEmail });
+	}
+
+	function onChangePhone(newPhone) {
+		setAttributes({ phone: newPhone });
+	}
+
+	function onChangeOther(newOther) {
+		setAttributes({ other: newOther });
 	}
 
 	return (
@@ -50,11 +58,25 @@ export default function Edit({ attributes, setAttributes }) {
 				onChange={onChangeTitle}
 			/>
 			<RichText
-				key="editable"
+				className="contact-block-email"
+				value={email}
+				onChange={onChangeEmail}
+				tagName="a"
+				placeholder="Email"
+			/>
+			<RichText
+				className="contact-block-phone"
+				value={phone}
+				onChange={onChangePhone}
+				tagName="a"
+				placeholder="Phone"
+			/>
+			<RichText
+				className="contact-block-other"
+				value={other}
+				onChange={onChangeOther}
 				tagName="p"
-				placeholder="Contact details"
-				value={body}
-				onChange={onChangeBody}
+				placeholder="Other information"
 			/>
 		</div>
 	);

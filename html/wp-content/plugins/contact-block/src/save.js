@@ -23,11 +23,49 @@ import { useBlockProps, RichText } from "@wordpress/block-editor";
  * @return {WPElement} Element to render.
  */
 export default function save({ attributes }) {
-	const { title, body } = attributes;
+	const { title, email, phone, other } = attributes;
+
 	return (
 		<div {...useBlockProps.save()}>
 			<h3>{title}</h3>
-			<RichText.Content tagName="p" value={body} />
+
+			<div className="contact-block-phone-wrapper">
+				{phone ? (
+					<span>
+						<a href={"tel:" + phone}>Telefon: </a>
+					</span>
+				) : (
+					""
+				)}
+				<RichText.Content
+					className="contact-block-phone"
+					value={phone}
+					tagName="a"
+					href={"tel:" + phone}
+				/>
+			</div>
+
+			<div className="contact-block-email-wrapper">
+				{email ? (
+					<span>
+						<a href={"mailto:" + email}>Mail: </a>
+					</span>
+				) : (
+					""
+				)}
+				<RichText.Content
+					className="contact-block-email"
+					value={email}
+					tagName="a"
+					href={"mailto:" + email}
+				/>
+			</div>
+
+			<RichText.Content
+				className="contact-block-other"
+				value={other}
+				tagName="p"
+			/>
 		</div>
 	);
 }

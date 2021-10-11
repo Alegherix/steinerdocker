@@ -6,8 +6,6 @@
 
 .wp-block-create-block-contact-block {
 	border: none;
-
-	p {
-		line-height: 1.5rem;
-	}
+	display: flex;
+	flex-direction: column;
 }

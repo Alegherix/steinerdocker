@@ -58,7 +58,9 @@ function Edit({
 }) {
   const {
     title,
-    body
+    email,
+    phone,
+    other
   } = attributes;
 
   function onChangeTitle(newTitle) {
@@ -67,9 +69,21 @@ function Edit({
     });
   }
 
-  function onChangeBody(newBody) {
+  function onChangeEmail(newEmail) {
     setAttributes({
-      body: newBody
+      email: newEmail
+    });
+  }
+
+  function onChangePhone(newPhone) {
+    setAttributes({
+      phone: newPhone
+    });
+  }
+
+  function onChangeOther(newOther) {
+    setAttributes({
+      other: newOther
     });
   }
 
@@ -80,11 +94,23 @@ function Edit({
     value: title,
     onChange: onChangeTitle
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
+    className: "contact-block-email",
+    value: email,
+    onChange: onChangeEmail,
+    tagName: "a",
+    placeholder: "Email"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "contact-block-phone",
+    value: phone,
+    onChange: onChangePhone,
+    tagName: "a",
+    placeholder: "Phone"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    className: "contact-block-other",
+    value: other,
+    onChange: onChangeOther,
     tagName: "p",
-    placeholder: "Contact details",
-    value: body,
-    onChange: onChangeBody
+    placeholder: "Other information"
   }));
 }
 
@@ -136,10 +162,17 @@ __webpack_require__.r(__webpack_exports__);
       source: "html",
       selector: "h3"
     },
-    body: {
+    email: {
       type: "string",
-      source: "html",
-      selector: "p"
+      selector: "contact-block-email"
+    },
+    phone: {
+      type: "string",
+      selector: "contact-block-phone"
+    },
+    other: {
+      type: "string",
+      selector: "contact-block-other"
     }
   },
 
@@ -203,11 +236,32 @@ function save({
 }) {
   const {
     title,
-    body
+    email,
+    phone,
+    other
   } = attributes;
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
-    tagName: "p",
-    value: body
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "contact-block-phone-wrapper"
+  }, phone ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "tel:" + phone
+  }, "Telefon: ")) : "", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
+    className: "contact-block-phone",
+    value: phone,
+    tagName: "a",
+    href: "tel:" + phone
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "contact-block-email-wrapper"
+  }, email ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "mailto:" + email
+  }, "Mail: ")) : "", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
+    className: "contact-block-email",
+    value: email,
+    tagName: "a",
+    href: "mailto:" + email
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
+    className: "contact-block-other",
+    value: other,
+    tagName: "p"
   }));
 }
 
