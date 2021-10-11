@@ -35,7 +35,19 @@ h2 {
   width: 180px;
 }
 
-.bigText {
+.applyBtn a {
+  background: #ddd8fa;
+}
+
+.applyText {
+  height: 100%;
+  z-index: 10;
+}
+
+.bgImage img {
+  z-index: 1;
+  width: 768px;
+  margin-left: -4rem;
   display: none;
 }
 
@@ -44,15 +56,16 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-  .smallText {
-    display: none;
-  }
-
-  .bigText {
-    display: flex;
-  }
   .wp-block-buttons {
     justify-content: start;
     margin: 4rem 0rem;
+  }
+
+  .applyText {
+    margin-top: 2rem;
+  }
+
+  .bgImage img {
+    display: inline;
   }
 }
