@@ -1,3 +1,7 @@
+.applyBtn{
+  background: #EFECFD;
+}
+
 .content {
   max-width: 1280px;
   padding: 0 1rem;
@@ -9,6 +13,8 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
   color: black;
+  margin-bottom: 70px;
+  font-weight: bold;
 }
 
 .dashboardGroup div {
@@ -58,12 +64,18 @@
   justify-items: center;
 }
 
+.alumContainer {
+  max-width: 337px;
+  border-radius: 6px;
+}
+
 .alumContainer p {
   max-width: 360px;
 }
 
 .alumContainer h2 {
   text-align: center;
+  font-size: 20px;
 }
 
 .alumContainer p {
@@ -71,10 +83,84 @@
   font-style: italic;
 }
 
+.alumContainer figure {
+  border-radius: 6px;
+}
+
 .alumContainer figure img {
-  width: 100%;
-  height: 280px;
+  height: 337px;
+  width: 337px;
   object-fit: cover;
+  
+}
+
+.wheelSection, .content h2, .content p{
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.wheelSection p {
+  margin-bottom: 70px;
+}
+
+.lanSec {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1.4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  max-width: 1280px;
+}
+
+.lanBlockImg {
+  z-index: 10;
+  border-radius: 6px;
+}
+
+.bgImg {
+  position: absolute;
+  display: none;
+}
+
+.lanBlockText{
+  z-index: 10;
+  padding: 0 1rem;
+}
+
+.lanBlockText h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.lanBlockText p {
+    font-size: 1rem;
+}
+
+.themeText {
+  padding-bottom: 1.4rem;
+}
+
+.dashboardGroup a.wp-block-button__link{
+  color: black !important;
+}
+
+.temaHeader {
+  margin-bottom: 1rem;
+}
+
+.eventImg {
+  margin-bottom: 70px;
+}
+
+.illustrationContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: #EBF3E2;
+    padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,5 +173,23 @@
 
   .alumWrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lanSec {
+    flex-direction: row;
+    gap: 3.4rem;
+    margin-bottom: 8rem;
+  }
+
+  .bgImg {
+    display: flex;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .wheelSection, .content h2, .content p{
+  text-align: center;
   }
 }

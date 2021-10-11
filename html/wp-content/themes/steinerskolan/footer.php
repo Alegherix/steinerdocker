@@ -9,7 +9,7 @@
 
   <?php $menuItems = wp_get_nav_menu_items('Footer Menu'); ?>
 
-  <nav>
+  <nav class="links">
     <ul>
       <?php $currentPageId = $wp_query->queried_object_id;
       foreach ($menuItems as $item) : ?>
@@ -24,7 +24,7 @@
 
   <?php $socialMedia = wp_get_nav_menu_items('Social Media'); ?>
 
-  <ul>
+  <ul class="socials">
     <?php foreach ($socialMedia as $item) : ?>
 
       <?php if (strtolower($item->title) === "facebook") : ?>
