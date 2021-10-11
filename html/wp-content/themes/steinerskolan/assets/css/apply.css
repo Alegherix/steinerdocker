@@ -35,10 +35,6 @@ h2 {
   width: 180px;
 }
 
-.applyContainer {
-  z-index: -1;
-}
-
 .applyBtn a {
   background: #ddd8fa;
   color: black !important;
@@ -57,6 +53,7 @@ h2 {
 
 .bgImage {
   z-index: -1;
+  position: absolute;
 }
 
 @media only screen and (min-width: 768px) {
