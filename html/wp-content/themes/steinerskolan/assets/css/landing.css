@@ -1,5 +1,5 @@
-.applyBtn{
-  background: #EFECFD;
+.applyBtn {
+  background: #efecfd;
 }
 
 .content {
@@ -60,13 +60,16 @@
 .alumWrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
+  align-items: center;
   justify-items: center;
+  max-width: 1280px;
+  width: 100%;
 }
 
 .alumContainer {
   max-width: 337px;
   border-radius: 6px;
+  margin: auto;
 }
 
 .alumContainer p {
@@ -91,10 +94,11 @@
   height: 337px;
   width: 337px;
   object-fit: cover;
-  
 }
 
-.wheelSection, .content h2, .content p{
+.wheelSection,
+.content h2,
+.content p {
   max-width: 700px;
   margin: auto;
   text-align: left;
@@ -124,26 +128,26 @@
   display: none;
 }
 
-.lanBlockText{
+.lanBlockText {
   z-index: 10;
   padding: 0 1rem;
 }
 
 .lanBlockText h3 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 1rem;
 }
 
 .lanBlockText p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .themeText {
   padding-bottom: 1.4rem;
 }
 
-.dashboardGroup a.wp-block-button__link{
+.dashboardGroup a.wp-block-button__link {
   color: black !important;
 }
 
@@ -156,11 +160,12 @@
 }
 
 .illustrationContainer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background: #EBF3E2;
-    padding: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: #ebf3e2;
+  padding: 1rem;
+  margin: 70px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -189,7 +194,9 @@
     flex-direction: row-reverse;
   }
 
-  .wheelSection, .content h2, .content p{
-  text-align: center;
+  .wheelSection,
+  .content h2,
+  .content p {
+    text-align: center;
   }
 }
