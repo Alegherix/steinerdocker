@@ -9,8 +9,14 @@
   margin-bottom: 2.875rem;
 }
 
-.contact-page h2 {
+.contact-page .heading-map {
+  margin-top: 0.8rem;
   margin-bottom: 2.688rem;
+}
+
+.contact-page .heading-work {
+  margin-bottom: 1.125rem;
+  line-height: 2rem;
 }
 
 .contact-page .wp-block-columns:first-child {
@@ -49,16 +55,16 @@
 .contact-page .wp-block-columns .contact-right-column .bus-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 2.875rem;
   margin-bottom: 4.938rem;
 }
 
 .contact-page .wp-block-columns .contact-right-column .bus-wrapper figure {
   margin-bottom: 0;
-  width: 64px;
-  height: 73px;
-  margin-right: 1rem;
+  width: 40px;
+  height: 45px;
+  margin-right: 1.5rem;
   /* margin-left: 0.4rem; */
 }
 
@@ -74,13 +80,13 @@
   .contact-page .wp-block-columns:first-child {
     margin-bottom: 7rem;
   }
-  .contact-page .wp-block-column.contact-left-column > * {
+  /* .contact-page .wp-block-column.contact-left-column > * {
     max-width: 365px;
   }
 
   .contact-page .wp-block-columns .contact-left-column {
     width: 365px;
-  }
+  } */
 
   .contact-page .wp-block-columns .contact-left-column {
     margin-bottom: 0;
@@ -88,7 +94,7 @@
 
   .contact-page .background-heading {
     width: fit-content;
-    background-image: url("../images/titleBackground.png");
+    background-image: url("../images/title-background.png");
     background-position: left 50% top 50%;
     background-repeat: no-repeat;
   }
@@ -99,11 +105,11 @@
     margin: -1.5rem -1.3rem 2.875rem -1.3rem;
   }
 
-  .contact-page h2.background-heading {
+  /*   .contact-page h2.background-heading {
     background-size: 150px 65px;
     padding: 1.7rem 1rem;
     margin: -1.7rem -1rem 2.688rem -1rem;
-  }
+  } */
 
   .contact-work-wrapper {
     max-width: 337px;
@@ -113,22 +119,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/contactWorkBackground.png");
+    background-image: url("../images/contact-work-background.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: inherit;
+    /*  background-size: contain; */
 
-    padding-top: 5rem;
-    margin-top: -5rem;
+    padding-top: 6rem;
+    margin-top: -6rem;
 
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     /* margin-bottom: 5rem; */
 
-    padding-right: 15rem;
+    padding-right: 18rem;
     margin-right: 0;
 
-    padding-left: 15rem;
-    margin-left: -15rem;
+    padding-left: 18rem;
+    margin-left: -18rem;
   }
 
   .contact-work-wrapper > * {
@@ -136,7 +143,7 @@
   }
 
   .contact-page .wp-block-columns .contact-right-column .bus-wrapper {
-    margin-bottom: 9rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -148,7 +155,7 @@
 
 .contact-image {
   width: 100%;
-  height: 258px;
+  height: 433px;
 }
 
 .contact-image img {
