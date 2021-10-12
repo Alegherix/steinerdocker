@@ -114,3 +114,10 @@ header nav ul li {
   height: auto;
   padding: 0.5rem;
 }
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Bitter', serif;
+}
