@@ -75,6 +75,18 @@ h1.courses-heading {
   .seven-nine .wp-block-create-block-details-block:last-child {
     border-radius: 0 0 16px 16px;
   }
+
+  .one-tree .wp-block-create-block-details-block:not(:first-child),
+  .four-six .wp-block-create-block-details-block:not(:first-child),
+  .seven-nine .wp-block-create-block-details-block:not(:first-child) {
+    padding-top: 0;
+  }
+
+  .one-tree .wp-block-create-block-details-block:not(:last-child),
+  .four-six .wp-block-create-block-details-block:not(:last-child),
+  .seven-nine .wp-block-create-block-details-block:not(:last-child) {
+    padding-bottom: 2.875rem;
+  }
 }
 
 @media (min-width: 1000px) {
