@@ -37,7 +37,7 @@
         <?php $currentPageId = $wp_query->queried_object_id;
         foreach ($testMenu as $item) : ?>
           <li class="nav-item">
-            <a class="nav-link<?= $item->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $item->url; ?>">
+            <a class="nav-link<?= $item->object_id == $currentPageId ? ' active'  : '' ?>" href="<?= $item->url; ?>">
               <?= $item->title; ?>
             </a>
             <?php if ($item->children > 0) : ?>

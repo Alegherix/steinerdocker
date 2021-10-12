@@ -93,7 +93,7 @@ header nav ul li {
   }
 }
 
-.active {
+.nav-link.active {
   font-weight: bold;
   color: black;
 }
@@ -118,6 +118,10 @@ header nav ul li {
 .nav-link {
   color: black;
   text-decoration: none;
-  font-weight: 600;
-  font-family: 'Bitter', serif;
+  font-weight: 500;
+  font-family: "Bitter", serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
