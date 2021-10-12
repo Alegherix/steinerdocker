@@ -79,6 +79,11 @@ add_theme_support(
             'slug'  => 'white',
             'color' => $white,
         ),
+        array(
+            'name'  => esc_html__('Pink', 'steinerskolan'),
+            'slug'  => 'pink',
+            'color' => $pink,
+        ),
     )
 );
 
