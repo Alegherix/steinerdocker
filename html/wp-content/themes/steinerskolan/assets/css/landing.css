@@ -162,6 +162,11 @@
   margin: 70px 0;
 }
 
+.themeText {
+  margin-top: 1rem !important;
+  margin-bottom: 24px;
+}
+
 @media only screen and (min-width: 768px) {
   .dashboardGroup {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -198,10 +203,6 @@
   .hollidayBtnBlock {
     justify-content: center;
   }
-}
-
-.themeText {
-  margin-top: 1rem !important;
 }
 
 .holidayBtn a {
