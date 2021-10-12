@@ -1,24 +1,25 @@
 footer {
-  background: #EFECFD;
+  background: #efecfd;
   padding: 3rem 0;
   gap: 3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 ul {
   list-style: none;
 }
 
-.links{
+.links {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
 
-.links ul{
-padding: 0;
+.links ul {
+  padding: 0;
 }
 
 .links ul li a {
@@ -32,17 +33,28 @@ padding: 0;
   list-style: none;
   gap: 1rem;
   padding: 0;
+}
 
+.footerAdress {
+}
+
+.adressHeading {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
-   footer {
-     justify-content: center;
-     gap: 9rem;
-     flex-direction: row;
-     }
-  
-   .socials {
-      flex-direction: column;
-     }
+  footer {
+    justify-content: center;
+    gap: 9rem;
+    flex-direction: row;
+    margin-top: 200px;
+  }
+
+  .adressHeading {
+    margin-bottom: 25px;
+  }
+
+  .socials {
+    flex-direction: column;
+  }
 }
