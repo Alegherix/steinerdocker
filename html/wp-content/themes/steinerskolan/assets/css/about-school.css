@@ -62,17 +62,17 @@ div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure img {
 }
 
 div.wp-block-group.about-waldorf article h2,
-div.wp-block-group.waldorf-party article h2 {
+div.wp-block-group.waldorf-party article h3 {
   padding: 0 1.25rem;
-  line-height: 2.188rem;
   margin-bottom: 1rem;
   /*  margin-top: 1.5rem; */
   letter-spacing: 2%;
 }
-
-div.wp-block-group.waldorf-party article h2 {
-  padding: 0 1.25rem;
-  margin-bottom: 1rem;
+div.wp-block-group.about-waldorf article h2 {
+  line-height: 2.188rem;
+}
+div.wp-block-group.waldorf-party article h3 {
+  line-height: 1.75rem;
 }
 
 div.wp-block-group.about-waldorf article p {
@@ -139,7 +139,7 @@ div.wp-block-group.waldorf-party
   /* Start styling for about waldorf block under hero  */
   div.wp-block-group.about-waldorf article h2,
   div.wp-block-group.about-waldorf article p,
-  div.wp-block-group.waldorf-party article h2,
+  div.wp-block-group.waldorf-party article h3,
   div.wp-block-group.waldorf-party article p {
     padding: 0;
   }
@@ -177,7 +177,7 @@ div.wp-block-group.waldorf-party
     margin-bottom: 8.75rem;
   }
   div.wp-block-group.about-waldorf article h2,
-  div.wp-block-group.waldorf-party article h2 {
+  div.wp-block-group.waldorf-party article h3 {
     margin-top: 0;
     margin-bottom: 1.188rem;
   }
