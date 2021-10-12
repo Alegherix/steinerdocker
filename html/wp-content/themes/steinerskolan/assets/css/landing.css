@@ -13,7 +13,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   color: black;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   font-weight: bold;
 }
 
@@ -155,10 +155,6 @@
   color: black !important;
 }
 
-.temaHeader {
-  margin-bottom: 1rem;
-}
-
 .eventImg {
   margin-bottom: 70px;
 }
@@ -174,10 +170,10 @@
 
 @media only screen and (min-width: 768px) {
   .dashboardGroup {
-    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 44px;
     color: black;
+    margin-bottom: 180px;
   }
 
   .alumWrapper {
@@ -187,7 +183,7 @@
   .lanSec {
     flex-direction: row;
     gap: 3.4rem;
-    margin-bottom: 9rem;
+    margin-bottom: 90px;
   }
 
   .bgImg {
@@ -203,4 +199,8 @@
   .content p {
     text-align: center;
   }
+}
+
+.themeText {
+  margin-top: 1rem;
 }
