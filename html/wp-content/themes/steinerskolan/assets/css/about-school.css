@@ -1,3 +1,4 @@
+/* Hero styling  */
 .about-hero {
 }
 
@@ -31,6 +32,7 @@
   padding: 0 1.25rem;
 }
 
+/* Start styling for about waldorf block under hero  */
 div.wp-block-group.about-waldorf {
   margin-top: 4.375rem;
 }
@@ -38,15 +40,21 @@ div.wp-block-group.about-waldorf {
 div.wp-block-group.about-waldorf article {
   max-width: 932px;
   margin-bottom: 4.375rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.wp-block-group.about-waldorf article figure {
+div.wp-block-group.about-waldorf article figure,
+div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure {
   width: 100%;
   height: 225px;
   max-width: 435px;
 }
 
-div.wp-block-group.about-waldorf article figure img {
+div.wp-block-group.about-waldorf article figure img,
+div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -74,10 +82,58 @@ div.wp-block-group.about-waldorf article .wp-block-buttons .wp-block-button a {
   font-weight: 500;
 }
 
-@media (min-width: 767px) {
+/* Start styling for fest och högtider  */
+
+div.wp-block-group.waldorf-party article {
+  /* margin-top: 4.375rem; */
+  max-width: 932px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.375rem;
+}
+
+div.wp-block-group.waldorf-party article h2 {
+  padding: 0 1.25rem;
+  margin-bottom: 1rem;
+}
+div.wp-block-group.waldorf-party article p {
+  max-width: 435px;
+  padding: 0 1.25rem;
+}
+
+div.wp-block-group.waldorf-party article figure {
+  margin-bottom: 1.5rem;
+}
+
+div.wp-block-group.waldorf-party
+  article.parties-and-celebrations-article
+  figure {
+  width: 265px;
+  height: 265px;
+  margin-bottom: 4.375rem;
+}
+div.wp-block-group.waldorf-party
+  article.parties-and-celebrations-article
+  figure
+  img {
+  object-fit: cover;
+}
+
+@media (min-width: 600px/* 767px */) {
+  /* Styling hero block  */
   .wp-block-create-block-hero.about-hero .wp-block-cover {
     min-height: 430px;
   }
+
+  /* Start styling for about waldorf block under hero  */
+
+  /* Start styling for fest och högtider  */
+}
+
+@media (min-width: 900px/* 767px */) {
+  /* Styling hero block  */
+
   .wp-block-create-block-hero.about-hero h1 {
     background-size: 230px 75px;
     margin-top: calc(2.875rem - 1.6rem);
@@ -88,6 +144,7 @@ div.wp-block-group.about-waldorf article .wp-block-buttons .wp-block-button a {
     text-align: center;
   }
 
+  /* Start styling for about waldorf block under hero  */
   div.wp-block-group.about-waldorf {
     margin-top: 10.875rem;
 
@@ -104,13 +161,16 @@ div.wp-block-group.about-waldorf article .wp-block-buttons .wp-block-button a {
   div.wp-block-group.about-waldorf article p {
     padding: 0;
   }
-
   div.wp-block-group.about-waldorf article figure {
-    width: 435px;
-    height: 261px;
     margin-right: 2.563rem;
     margin-bottom: 0;
   }
+  div.wp-block-group.about-waldorf article figure,
+  div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure {
+    width: 435px;
+    height: 261px;
+  }
+
   div.wp-block-group.about-waldorf article:nth-of-type(2) figure {
     margin-right: 0;
     margin-left: 2.563rem;
@@ -118,9 +178,39 @@ div.wp-block-group.about-waldorf article .wp-block-buttons .wp-block-button a {
 
   div.wp-block-group.about-waldorf article {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   div.wp-block-group.about-waldorf article:nth-of-type(2) {
     flex-direction: row-reverse;
+  }
+
+  /* Start styling for fest och högtider  */
+
+  div.wp-block-group.waldorf-party .wp-block-group.party-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 4.375rem;
+    grid-column-gap: 3.875rem;
+  }
+
+  div.wp-block-group.waldorf-party article.parties-and-celebrations-article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+  }
+  div.wp-block-group.waldorf-party
+    article.parties-and-celebrations-article
+    figure {
+    width: 457px;
+    height: 457px;
+    margin-bottom: 0;
+  }
+  div.wp-block-group.waldorf-party article h2,
+  div.wp-block-group.waldorf-party article p {
+    padding: 0;
   }
 }
