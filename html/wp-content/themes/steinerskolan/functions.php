@@ -34,6 +34,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('about-school', get_template_directory_uri() . '/assets/css/about-school.css', true, '1.1', 'all');
     wp_enqueue_style('apply', get_template_directory_uri() . '/assets/css/apply.css', true, '1.1', 'all');
     wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css', true, '1.1', 'all');
+    wp_enqueue_style('courses', get_template_directory_uri() . '/assets/css/courses.css', true, '1.1', 'all');
     wp_enqueue_style('landing', get_template_directory_uri() . '/assets/css/landing.css', true, '1.1', 'all');
     wp_enqueue_style('details-block', get_template_directory_uri() . '/assets/css/details-block.css', true, '1.1', 'all');
     wp_enqueue_script('details-block', get_template_directory_uri() . '/assets/js/details-block.js', '', '', true);
