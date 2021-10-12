@@ -4,7 +4,6 @@ h1.courses-heading {
   font-size: 29px;
   padding-left: 0.3rem;
   line-height: 35px;
-  letter-spacing: 0.039rem;
 }
 
 .wp-block-create-block-details-block {
@@ -14,7 +13,6 @@ h1.courses-heading {
 .wp-block-create-block-details-block h3 {
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.039rem;
 }
 
 .preschool {
@@ -45,7 +43,6 @@ h1.courses-heading {
   .wp-block-create-block-details-block h3 {
     font-size: 25px;
     line-height: 30px;
-    letter-spacing: 0.02em;
   }
 
   .preschool,

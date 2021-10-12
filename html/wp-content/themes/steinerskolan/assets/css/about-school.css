@@ -59,12 +59,14 @@ div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure img {
 
 div.wp-block-group.about-waldorf article h2,
 div.wp-block-group.waldorf-party article h3,
+div.wp-block-group.waldorf-party article h2,
 div.wp-block-group.school-kitchen h2 {
   padding: 0 1.25rem;
   margin-bottom: 1rem;
-  letter-spacing: 0.039rem;
 }
+
 div.wp-block-group.about-waldorf article h2,
+div.wp-block-group.waldorf-party article h2,
 div.wp-block-group.school-kitchen h2 {
   line-height: 2.188rem;
 }
@@ -159,6 +161,7 @@ div.wp-block-group.school-kitchen figure img {
   div.wp-block-group.about-waldorf article h2,
   div.wp-block-group.about-waldorf article p,
   div.wp-block-group.waldorf-party article h3,
+  div.wp-block-group.waldorf-party article h2,
   div.wp-block-group.waldorf-party article p,
   div.wp-block-group.school-kitchen h2,
   div.wp-block-group.school-kitchen p {

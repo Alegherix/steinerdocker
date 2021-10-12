@@ -48,6 +48,12 @@ h3 {
   font-size: 23px;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 0.039rem;
+}
+
 @media (min-width: 800px) {
   h1 {
     font-size: 39px;
