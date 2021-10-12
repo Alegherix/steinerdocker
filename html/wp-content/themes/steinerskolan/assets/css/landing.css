@@ -201,8 +201,16 @@
   .content p {
     text-align: center;
   }
+
+  .hollidayBtnBlock {
+    justify-content: center;
+  }
 }
 
 .themeText {
   margin-top: 1rem !important;
+}
+
+.hollidayBtn a {
+  width: fit-content;
 }

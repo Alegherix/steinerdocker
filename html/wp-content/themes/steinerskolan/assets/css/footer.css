@@ -1,7 +1,9 @@
 footer {
+  max-width: 1280px;
+  margin: auto;
   background: #efecfd;
   padding: 3rem 0;
-  gap: 3rem;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,20 +14,18 @@ ul {
   list-style: none;
 }
 
-.links {
+.links ul {
+  padding: 0;
   display: flex;
   gap: 1rem;
   flex-direction: column;
-}
-
-.links ul {
-  padding: 0;
 }
 
 .links ul li a {
   font-weight: bold;
   color: black;
   text-decoration: none;
+  font-family: 'Bitter', serif;
 }
 
 .socials {
@@ -36,10 +36,12 @@ ul {
 }
 
 .footerAdress {
+  text-align: center;
 }
 
 .adressHeading {
   font-weight: bold;
+  font-family: 'Bitter', serif;
 }
 
 @media only screen and (min-width: 768px) {
