@@ -152,6 +152,11 @@ div.wp-block-group.waldorf-party
     padding-right: 1rem;
     padding-left: 1rem;
   }
+
+  div.wp-block-group.about-waldorf article figure,
+  div.wp-block-group.waldorf-party .wp-block-group.party-grid article figure {
+    border-radius: 2px;
+  }
 }
 
 @media (min-width: 800px/* 767px */) {
