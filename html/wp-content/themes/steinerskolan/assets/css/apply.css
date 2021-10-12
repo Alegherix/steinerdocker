@@ -4,6 +4,10 @@ main {
   min-height: 90vh;
 }
 
+section.apply-page {
+  padding-bottom: 0;
+}
+
 section {
   max-width: 768px;
   padding: 1.8rem 1rem;
