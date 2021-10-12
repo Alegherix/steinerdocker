@@ -1,7 +1,7 @@
 /* .applyBtn {
   background: #efecfd;
 } */
-.wp-block-create-block-hero h1 {
+.wp-block-create-block-hero h1.hero-title-landing {
   font-size: 29px;
 }
 
@@ -171,7 +171,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .wp-block-create-block-hero h1.hero-title {
+  .wp-block-create-block-hero h1.hero-title-landing {
     font-size: 49px;
     margin-top: 2.875rem;
     margin-bottom: 1rem;
