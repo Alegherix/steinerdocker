@@ -11,7 +11,7 @@
 .dashboardGroup {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 44px;
+  gap: 1rem;
   color: black;
   margin-bottom: 70px;
   font-weight: bold;
@@ -105,6 +105,7 @@
 }
 
 .wheelSection p {
+  margin-top: 18px;
   margin-bottom: 70px;
 }
 
@@ -150,11 +151,6 @@
   font-size: 1rem;
 }
 
-.themeText {
-  margin-top: 18px;
-  margin-bottom: 70px;
-}
-
 .dashboardGroup a.wp-block-button__link {
   color: black !important;
 }
@@ -180,7 +176,7 @@
   .dashboardGroup {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.5rem;
+    gap: 44px;
     color: black;
   }
 
