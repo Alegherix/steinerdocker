@@ -1,0 +1,91 @@
+h1.courses-heading {
+  align-self: flex-start;
+  margin-bottom: 2.625rem;
+  font-size: 29px;
+  padding-left: 0.3rem;
+  line-height: 35px;
+  letter-spacing: 0.039rem;
+}
+
+.wp-block-create-block-details-block {
+  margin-bottom: 0.5rem;
+}
+
+.wp-block-create-block-details-block h3 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.039rem;
+}
+
+.preschool {
+  margin-top: 2.875rem;
+}
+
+.preschool,
+.one-tree,
+.four-six,
+.seven-nine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.813rem;
+}
+
+@media (min-width: 800px) {
+  h1.courses-heading {
+    margin-bottom: 4.375rem;
+    font-size: 39px;
+    line-height: 47px;
+  }
+
+  .wp-block-create-block-details-block {
+    margin-bottom: 0;
+  }
+
+  .wp-block-create-block-details-block h3 {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+
+  .preschool,
+  .one-tree,
+  .four-six {
+    margin-bottom: 1.5rem;
+  }
+
+  .preschool,
+  .one-tree,
+  .four-six,
+  .seven-nine {
+    border-radius: 16px;
+  }
+
+  .preschool .wp-block-create-block-details-block {
+    border-radius: 16px;
+  }
+
+  .one-tree .wp-block-create-block-details-block:first-child,
+  .four-six .wp-block-create-block-details-block:first-child,
+  .seven-nine .wp-block-create-block-details-block:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+  .one-tree .wp-block-create-block-details-block:last-child,
+  .four-six .wp-block-create-block-details-block:last-child,
+  .seven-nine .wp-block-create-block-details-block:last-child {
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .preschool,
+  .one-tree,
+  .four-six,
+  .seven-nine {
+    padding: 0 0;
+  }
+
+  .preschool {
+    margin-top: 12.5rem;
+  }
+}

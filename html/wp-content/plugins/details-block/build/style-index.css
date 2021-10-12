@@ -11,13 +11,14 @@
   width: 100%;
   max-width: 600px;
   border-radius: 16px;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 @media (min-width: 800px) {
   .wp-block-create-block-details-block {
     padding: 2.75rem 0;
     max-width: 891px;
-    margin-bottom: 5.313rem;
+    border-radius: 0;
+    /* margin-bottom: 5.313rem; */
   }
 }
 .wp-block-create-block-details-block .details-summary {
