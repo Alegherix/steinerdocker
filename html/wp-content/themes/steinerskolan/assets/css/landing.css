@@ -50,10 +50,6 @@
   align-items: center;
 }
 
-.dashboardGroup div a:hover {
-  background-color: orange;
-}
-
 .alumWrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
