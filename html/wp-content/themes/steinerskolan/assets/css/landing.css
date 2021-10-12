@@ -94,6 +94,7 @@
   height: 337px;
   width: 337px;
   object-fit: cover;
+  object-position: top;
 }
 
 .wheelSection,

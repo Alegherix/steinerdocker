@@ -9,6 +9,11 @@
 
   <?php $menuItems = wp_get_nav_menu_items('Footer Menu'); ?>
 
+  <div class="footerAdress">
+    <p class="adressHeading">Adress</p>
+    <p>Adressvägen 33 <br />, 43356 Björkekärr</p>
+  </div>
+
   <nav class="links">
     <ul>
       <?php $currentPageId = $wp_query->queried_object_id;
