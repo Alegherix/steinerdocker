@@ -5,6 +5,14 @@
   font-size: 29px;
 }
 
+.wp-block-create-block-hero.landing-hero .wp-block-cover {
+  min-height: 306px;
+}
+
+.wp-block-create-block-hero.landing-hero .wp-block-cover img {
+  object-position: left;
+}
+
 .content {
   max-width: 1280px;
   padding: 0 1rem;
@@ -171,6 +179,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .wp-block-create-block-hero.landing-hero .wp-block-cover {
+    min-height: 596px;
+  }
+
   .wp-block-create-block-hero h1.hero-title-landing {
     font-size: 49px;
     margin-top: 2.875rem;
