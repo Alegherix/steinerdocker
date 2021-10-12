@@ -22,13 +22,10 @@ import { useBlockProps, InnerBlocks, RichText } from "@wordpress/block-editor";
  *
  * @return {WPElement} Element to render.
  */
-export default function save({ attributes }) {
-	const { title, body } = attributes;
+export default function save() {
 	return (
 		<div {...useBlockProps.save()}>
 			<InnerBlocks.Content />
-			{/* 	<h1>{title}</h1>
-			<RichText.Content tagName="p" value={body} className="intro" /> */}
 		</div>
 	);
 }

@@ -26,18 +26,6 @@ import save from "./save";
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType("create-block/hero", {
-	attributes: {
-		title: {
-			type: "string",
-			source: "html",
-			selector: "h1",
-		},
-		body: {
-			type: "string",
-			source: "html",
-			selector: "p",
-		},
-	},
 	/**
 	 * @see ./edit.js
 	 */

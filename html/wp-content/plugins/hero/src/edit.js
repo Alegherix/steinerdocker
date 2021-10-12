@@ -29,42 +29,23 @@ import "./editor.scss";
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit({ attributes, setAttributes }) {
+export default function Edit() {
 	const MY_TEMPLATE = [
 		["core/cover", { placeholder: "Hero Image" }],
 		["core/heading", { placeholder: "Hero Title", className: "hero-title" }],
 		["core/paragraph", { placeholder: "Intro", className: "intro" }],
-		["core/button", { placeholder: "Button text", className: "hero-button" }],
+		[
+			"core/button",
+			{
+				placeholder: "Button text",
+				className: "hero-button",
+			},
+		],
 	];
-
-	const { title, body } = attributes;
-
-	function onChangeTitle(newTitle) {
-		setAttributes({ title: newTitle });
-	}
-
-	function onChangeBody(newBody) {
-		setAttributes({ body: newBody });
-	}
 
 	return (
 		<div {...useBlockProps()}>
 			<InnerBlocks template={MY_TEMPLATE} /* templateLock="all" */ />
-			{/* <RichText
-				key="editable"
-				tagName="h1"
-				placeholder="Title"
-				value={title}
-				onChange={onChangeTitle}
-			/>
-			<RichText
-				key="editable"
-				tagName="p"
-				placeholder="Intro text"
-				value={body}
-				onChange={onChangeBody}
-				className="intro"
-			/> */}
 		</div>
 	);
 }

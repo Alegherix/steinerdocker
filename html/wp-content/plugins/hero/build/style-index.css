@@ -27,20 +27,11 @@
 }
 .wp-block-create-block-hero .intro {
   max-width: 800px;
-  /* text-align: center; */
   padding: 0 1rem;
   margin: 0 auto;
 }
 .wp-block-create-block-hero .hero-button {
   margin: 0 auto;
-}
-.wp-block-create-block-hero .hero-button .wp-block-button__link {
-  transition: ease-in-out 0.2s;
-}
-.wp-block-create-block-hero .hero-button .wp-block-button__link:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0px 0px 0px 2px #000000;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

@@ -40,8 +40,14 @@ h2 {
 }
 
 .applyBtn a {
+  transition: ease 0.1s;
+  font-weight: 500;
   background: #ddd8fa;
   color: black !important;
+}
+
+.applyBtn a:hover {
+  background-color: #cfc8f9 !important;
 }
 
 .applyText {

@@ -52,10 +52,7 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function Edit({
-  attributes,
-  setAttributes
-}) {
+function Edit() {
   const MY_TEMPLATE = [["core/cover", {
     placeholder: "Hero Image"
   }], ["core/heading", {
@@ -68,23 +65,6 @@ function Edit({
     placeholder: "Button text",
     className: "hero-button"
   }]];
-  const {
-    title,
-    body
-  } = attributes;
-
-  function onChangeTitle(newTitle) {
-    setAttributes({
-      title: newTitle
-    });
-  }
-
-  function onChangeBody(newBody) {
-    setAttributes({
-      body: newBody
-    });
-  }
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
     template: MY_TEMPLATE
     /* templateLock="all" */
@@ -134,19 +114,6 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/hero", {
-  attributes: {
-    title: {
-      type: "string",
-      source: "html",
-      selector: "h1"
-    },
-    body: {
-      type: "string",
-      source: "html",
-      selector: "p"
-    }
-  },
-
   /**
    * @see ./edit.js
    */
@@ -202,13 +169,7 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function save({
-  attributes
-}) {
-  const {
-    title,
-    body
-  } = attributes;
+function save() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
 }
 
