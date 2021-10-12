@@ -25,19 +25,16 @@
 }
 
 .dashboardGroup div:nth-child(1) a {
-  background-color: #f6cdc8;
+  background-color: #f4bcb5;
 }
-
 .dashboardGroup div:nth-child(2) a {
-  background-color: #ddd8fa;
+  background-color: #cfc8f9;
 }
-
 .dashboardGroup div:nth-child(3) a {
-  background-color: #ffefb6;
+  background-color: #ffe99a;
 }
-
 .dashboardGroup div:nth-child(4) a {
-  background-color: #d9ecd7;
+  background-color: #c4ebc0;
 }
 
 .dashboardGroup a {
