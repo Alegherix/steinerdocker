@@ -11,9 +11,6 @@
 <body class="loading" <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-
-  <!--  <?php $menuItems = wp_get_nav_menu_items('Menu'); ?> -->
-
   <?php $testMenu = get_menu('Menu'); ?>
 
 

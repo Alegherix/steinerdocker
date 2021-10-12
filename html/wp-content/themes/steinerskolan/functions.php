@@ -7,10 +7,6 @@ add_action('after_setup_theme', function () {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
 
-
-
-    //add_theme_support('featured-img'); 
-    // add_theme_support('custom-header');
     add_theme_support('widgets');
 
     // Add support for editor styles.
@@ -34,7 +30,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.css', true, '1.1', 'all');
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', true, '1.1', 'all');
-    wp_enqueue_style('news', get_template_directory_uri() . '/assets/css/news.css', true, '1.1', 'all');
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css', true, '1.1', 'all');
     wp_enqueue_style('about-school', get_template_directory_uri() . '/assets/css/about-school.css', true, '1.1', 'all');
     wp_enqueue_style('apply', get_template_directory_uri() . '/assets/css/apply.css', true, '1.1', 'all');
@@ -48,20 +43,44 @@ add_action('wp_enqueue_scripts', function () {
 
 add_theme_support('wp-block-styles');
 
-// Register news custom post type.
-require get_template_directory() . '/post-types/news.php';
+// Editor color palette.
+$black     = '#000000';
+$green     = '#D9ECD7';
+$purple    = '#DDD8FA';
+$yellow    = '#FFEFB6';
+$white     = '#FFFFFF';
+$pink      = '#F6CDC8';
 
-//Register blocks on news posts in template so teh blocka are there when user create a new news post
-add_action('init', function () {
-    $post_type_object = get_post_type_object('news');
-    $post_type_object->template = array(
-        array('core/image'),
-        /* array('core/heading'), */
-        array('core/paragraph')
-    );
-});
-
-
+add_theme_support(
+    'editor-color-palette',
+    array(
+        array(
+            'name'  => esc_html__('Black', 'steinerskolan'),
+            'slug'  => 'black',
+            'color' => $black,
+        ),
+        array(
+            'name'  => esc_html__('Green', 'steinerskolan'),
+            'slug'  => 'green',
+            'color' => $green,
+        ),
+        array(
+            'name'  => esc_html__('Purple', 'steinerskolan'),
+            'slug'  => 'purple',
+            'color' => $purple,
+        ),
+        array(
+            'name'  => esc_html__('Yellow', 'steinerskolan'),
+            'slug'  => 'yellow',
+            'color' => $yellow,
+        ),
+        array(
+            'name'  => esc_html__('White', 'steinerskolan'),
+            'slug'  => 'white',
+            'color' => $white,
+        ),
+    )
+);
 
 function get_menu(string $location)
 {
