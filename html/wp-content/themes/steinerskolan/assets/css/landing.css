@@ -36,15 +36,29 @@
 }
 
 .dashboardGroup div:nth-child(1) a {
-  background-color: #f4bcb5;
+  background-color: #f6cdc8;
 }
+
 .dashboardGroup div:nth-child(2) a {
-  background-color: #cfc8f9;
+  background-color: #ddd8fa;
 }
 .dashboardGroup div:nth-child(3) a {
-  background-color: #ffe99a;
+  background-color: #ffefb6;
 }
 .dashboardGroup div:nth-child(4) a {
+  background-color: #d9ecd7;
+}
+
+.dashboardGroup div:nth-child(1) a:hover {
+  background-color: #f4bcb5;
+}
+.dashboardGroup div:nth-child(2) a:hover {
+  background-color: #cfc8f9;
+}
+.dashboardGroup div:nth-child(3) a:hover {
+  background-color: #ffe99a;
+}
+.dashboardGroup div:nth-child(4) a:hover {
   background-color: #c4ebc0;
 }
 
