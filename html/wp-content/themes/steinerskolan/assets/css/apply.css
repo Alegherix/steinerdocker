@@ -9,7 +9,7 @@ section.apply-page {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 3rem;
   max-width: 768px;
   padding: 0 1rem;
   /* padding-bottom: 84px; */
@@ -63,7 +63,8 @@ h2 {
 }
 
 .bgImage img {
-  width: 768px;
+  width: 100%;
+  height: 100%;
   margin-left: -4rem;
   display: none;
 }
@@ -71,9 +72,17 @@ h2 {
 .bgImage {
   z-index: 1;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 500px;
 }
 
 @media only screen and (min-width: 768px) {
+  section {
+    margin-top: 8rem;
+  }
+
   section.apply-page .applyContainer .applyText h1 {
     background-image: none;
   }
