@@ -116,8 +116,8 @@ header nav ul li {
 
 @media (min-width: 800px) {
   .custom-logo {
-    width: 270px;
     height: auto;
+    width: 270px;
   }
 }
 

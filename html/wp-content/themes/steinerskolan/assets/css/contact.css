@@ -19,10 +19,6 @@
   max-width: 932px;
 }
 
-.contact-page .wp-block-column > * {
-  max-width: 337px;
-}
-
 .contact-page .wp-block-columns .contact-right-column,
 .contact-left-column {
   width: 337px;
@@ -113,6 +109,10 @@
   .contact-page {
     margin-top: 8rem;
   }
+
+  .contact-page .wp-block-column > * {
+    max-width: 337px;
+  }
   .contact-page .wp-block-columns:first-child {
     margin-bottom: 7rem;
   }
@@ -134,7 +134,7 @@
 
   .contact-work-wrapper {
     max-width: 337px;
-    overflow: hidden;
+    /*   overflow: hidden; */
     position: relative;
     right: -10.5rem;
     display: flex;

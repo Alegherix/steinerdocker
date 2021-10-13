@@ -25,7 +25,7 @@ ul {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-size: 18px;
 }
 
@@ -42,13 +42,12 @@ ul {
 
 .adressHeading {
   font-weight: bold;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
 
 @media only screen and (min-width: 768px) {
   footer {
     justify-content: center;
-    gap: 9rem;
     flex-direction: row;
     margin-top: 200px;
   }
@@ -67,5 +66,11 @@ ul {
 
   .footerAdress {
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    gap: 9rem;
   }
 }
