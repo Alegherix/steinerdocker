@@ -112,7 +112,13 @@ header nav ul li {
 .custom-logo {
   width: 200px;
   height: auto;
-  padding: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .custom-logo {
+    width: 270px;
+    height: auto;
+  }
 }
 
 .nav-link {
