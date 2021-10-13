@@ -8,7 +8,6 @@
 .wp-block-create-block-contact-block {
 	display: flex;
 	flex-direction: column;
-	/* 	margin-bottom: 2rem; */
 
 	h3 {
 		margin-bottom: 1rem;
@@ -30,9 +29,12 @@
 		}
 	}
 
+	.contact-block-phone-wrapper + .contact-block-email-wrapper {
+		margin-top: 0.1rem;
+	}
+
 	.contact-block-phone-wrapper {
 		font-size: 16px;
-		margin-bottom: 0.1rem;
 		@media (min-width: 800px) {
 			font-size: 18px;
 		}
