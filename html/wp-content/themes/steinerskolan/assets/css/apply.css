@@ -9,22 +9,21 @@ section.apply-page {
 }
 
 section {
+  margin-top: 8rem;
   max-width: 768px;
-  padding: 1.8rem 1rem;
+  padding: 0 1rem;
   /* padding-bottom: 84px; */
   background-color: white;
   flex-grow: 1;
   line-height: 140%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
 }
 
 section.apply-page .applyContainer .applyText h1 {
   margin-bottom: 28px;
   width: fit-content;
-  background-image: url("../images/title-background.png");
+  background-image: url('../images/title-background.png');
   background-position: left 50% top 50%;
   background-repeat: no-repeat;
   background-size: 135px 70px;
