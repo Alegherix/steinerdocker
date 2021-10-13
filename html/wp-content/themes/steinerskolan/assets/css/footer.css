@@ -64,4 +64,8 @@ ul {
   .socials {
     flex-direction: column;
   }
+
+  .footerAdress {
+    text-align: left;
+  }
 }

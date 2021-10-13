@@ -11,7 +11,7 @@
 
   <div class="footerAdress">
     <p class="adressHeading">Adress</p>
-    <p>Adressvägen 33 <br /> 43356 Björkekärr</p>
+    <p>Tallhöjdsgatan 1 <br /> 416 74 GÖTEBORG</p>
   </div>
 
   <nav class="links">
