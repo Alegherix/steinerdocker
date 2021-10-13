@@ -11,9 +11,7 @@
 }
 
 .contact-page .heading-work {
-  /* margin-bottom: 1.125rem; */
   margin-bottom: 1.4rem;
-  /* margin-bottom: 2.688rem; */
   line-height: 2rem;
 }
 
@@ -64,7 +62,6 @@
   width: 40px;
   height: 45px;
   margin-right: 1.5rem;
-  /* margin-left: 0.4rem; */
 }
 
 .contact-page .wp-block-columns .contact-right-column .bus-wrapper figure img {
@@ -87,6 +84,12 @@
 
 .contact-page h1 {
   margin-bottom: 2.875rem;
+}
+
+@media (max-width: 290px) {
+  .contact-page h1.background-heading.wp-block-post-title {
+    background-size: 150px 75px;
+  }
 }
 
 .contact-page .background-heading {
@@ -113,14 +116,6 @@
   .contact-page .wp-block-columns:first-child {
     margin-bottom: 7rem;
   }
-  /* .contact-page .wp-block-column.contact-left-column > * {
-    max-width: 365px;
-  }
-
-  .contact-page .wp-block-columns .contact-left-column {
-    width: 365px;
-  } */
-
   .contact-page .heading-map {
     margin-bottom: 2.688rem;
     line-height: 1.912rem;
@@ -149,17 +144,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: inherit;
-    /*  background-size: contain; */
-
     padding-top: 6rem;
     margin-top: -6rem;
-
     padding-bottom: 6rem;
-    /* margin-bottom: 5rem; */
-
     padding-right: 18rem;
     margin-right: 0;
-
     padding-left: 18rem;
     margin-left: -18rem;
   }

@@ -1,8 +1,9 @@
 /* .applyBtn {
   background: #efecfd;
 } */
-.wp-block-create-block-hero h1.hero-title-landing {
+.wp-block-create-block-hero h1.hero-title.hero-title-landing {
   font-size: 29px;
+  margin-bottom: 0.5rem;
 }
 
 .wp-block-create-block-hero.landing-hero .wp-block-cover {
@@ -192,6 +193,33 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 350px) {
+  .content h2.temaHeader.first {
+    background-image: none;
+  }
+
+  .content h2.temaHeader.second {
+    background-image: none;
+  }
+}
+
+.content h2.temaHeader.first {
+  background-size: 360px 80px;
+}
+
+.content h2.temaHeader.second {
+  background-size: 300px 80px;
+}
+
+h2.temaHeader {
+  width: fit-content;
+  background-image: url("../images/title-background.png");
+  background-position: left 50% top 50%;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  margin: -1rem;
+}
+
 @media only screen and (min-width: 768px) {
   .wp-block-create-block-hero.landing-hero .wp-block-cover {
     min-height: 596px;
@@ -205,6 +233,13 @@
 
   .hero-button .wp-block-button__link {
     margin-top: 4.375rem;
+  }
+
+  h2.temaHeader {
+    width: 100%;
+    background-image: none;
+    padding: 0rem;
+    margin: auto;
   }
 
   .dashboardGroup {
@@ -257,5 +292,5 @@
 }
 .hero-button .wp-block-button__link:hover,
 .holidayBtn a:hover {
-  background-color: #cfc8f9;
+  background-color: #cfc8f9 !important;
 }
