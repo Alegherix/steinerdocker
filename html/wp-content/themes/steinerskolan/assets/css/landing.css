@@ -238,8 +238,10 @@
 .holidayBtn a {
   transition: ease 0.1s;
   font-weight: 500;
+  background-color: #ddd8fa;
+  color: black;
 }
 .hero-button .wp-block-button__link:hover,
 .holidayBtn a:hover {
-  background-color: #cfc8f9 !important;
+  background-color: #cfc8f9;
 }

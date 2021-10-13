@@ -21,8 +21,15 @@ section {
   height: 100%;
 }
 
-h1 {
+section.apply-page .applyContainer .applyText h1 {
   margin-bottom: 28px;
+  width: fit-content;
+  background-image: url("../images/title-background.png");
+  background-position: left 50% top 50%;
+  background-repeat: no-repeat;
+  background-size: 135px 70px;
+  padding: 1.5rem;
+  margin: -1.5rem -1.5rem 0.25rem -1.5rem;
 }
 
 h2 {
@@ -68,6 +75,9 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
+  section.apply-page .applyContainer .applyText h1 {
+    background-image: none;
+  }
   main {
     justify-content: center;
     align-items: center;
