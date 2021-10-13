@@ -27,45 +27,52 @@ export default function save({ attributes }) {
 
 	return (
 		<div {...useBlockProps.save()}>
-			<h3>{title}</h3>
+			{title && <h3>{title}</h3>}
 
-			<div className="contact-block-phone-wrapper">
-				{phone ? (
-					<span>
-						<a href={"tel:" + phone}>Telefon: </a>
-					</span>
-				) : (
-					""
-				)}
+			{phone && (
+				<div className="contact-block-phone-wrapper">
+					{phone ? (
+						<span>
+							<a href={"tel:" + phone}>Telefon: </a>
+						</span>
+					) : (
+						""
+					)}
+					<RichText.Content
+						className="contact-block-phone"
+						value={phone}
+						tagName="a"
+						href={"tel:" + phone}
+					/>
+				</div>
+			)}
+
+			{email && (
+				<div className="contact-block-email-wrapper">
+					{email ? (
+						<span>
+							<a href={"mailto:" + email}>Mail: </a>
+						</span>
+					) : (
+						""
+					)}
+
+					<RichText.Content
+						className="contact-block-email"
+						value={email}
+						tagName="a"
+						href={"mailto:" + email}
+					/>
+				</div>
+			)}
+
+			{other && (
 				<RichText.Content
-					className="contact-block-phone"
-					value={phone}
-					tagName="a"
-					href={"tel:" + phone}
+					className="contact-block-other"
+					value={other}
+					tagName="p"
 				/>
-			</div>
-
-			<div className="contact-block-email-wrapper">
-				{email ? (
-					<span>
-						<a href={"mailto:" + email}>Mail: </a>
-					</span>
-				) : (
-					""
-				)}
-				<RichText.Content
-					className="contact-block-email"
-					value={email}
-					tagName="a"
-					href={"mailto:" + email}
-				/>
-			</div>
-
-			<RichText.Content
-				className="contact-block-other"
-				value={other}
-				tagName="p"
-			/>
+			)}
 		</div>
 	);
 }

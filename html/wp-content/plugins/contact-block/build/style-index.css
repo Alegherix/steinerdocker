@@ -17,7 +17,6 @@
 }
 .wp-block-create-block-contact-block .contact-block-email-wrapper {
   font-size: 16px;
-  margin-bottom: 0.4rem;
 }
 @media (min-width: 800px) {
   .wp-block-create-block-contact-block .contact-block-email-wrapper {
@@ -33,6 +32,7 @@
 }
 .wp-block-create-block-contact-block .contact-block-phone-wrapper {
   font-size: 16px;
+  margin-bottom: 0.1rem;
 }
 @media (min-width: 800px) {
   .wp-block-create-block-contact-block .contact-block-phone-wrapper {
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 .wp-block-create-block-contact-block .contact-block-other {
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

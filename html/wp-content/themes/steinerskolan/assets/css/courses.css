@@ -31,7 +31,7 @@ h1.courses-heading {
 
 @media (min-width: 800px) {
   h1.courses-heading {
-    margin-bottom: 4.375rem;
+    margin-bottom: 3.5rem;
     font-size: 39px;
     line-height: 47px;
   }
@@ -95,6 +95,6 @@ h1.courses-heading {
   }
 
   .preschool {
-    margin-top: 12.5rem;
+    margin-top: 8rem;
   }
 }

@@ -6,13 +6,8 @@
   padding-bottom: 0;
 }
 
-.contact-page h1 {
-  margin-bottom: 2.875rem;
-}
-
 .contact-page .heading-map {
-  margin-top: 0.8rem;
-  margin-bottom: 2.688rem;
+  margin-bottom: 1.625;
 }
 
 .contact-page .heading-work {
@@ -90,10 +85,30 @@
   height: inherit;
 }
 
+.contact-page h1 {
+  margin-bottom: 2.875rem;
+}
+
+.contact-page .background-heading {
+  width: fit-content;
+  background-image: url("../images/title-background.png");
+  background-position: left 50% top 50%;
+  background-repeat: no-repeat;
+}
+
+.contact-page h1.background-heading {
+  background-size: 170.42px 75px;
+  padding: 1.5rem 1.3rem;
+  margin: -1.5rem -1.3rem calc(2.5rem - 1.5rem) -1.3rem;
+}
+
+.contact-work-wrapper .wp-block-create-block-contact-block {
+  margin-top: 1rem;
+}
+
 @media (min-width: 782px) {
   .contact-page {
-    /*  margin-top: 12.5rem; */
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
   .contact-page .wp-block-columns:first-child {
     margin-bottom: 7rem;
@@ -106,28 +121,21 @@
     width: 365px;
   } */
 
-  .contact-page .wp-block-columns .contact-left-column {
-    margin-bottom: 0;
-  }
-
-  .contact-page .background-heading {
-    width: fit-content;
-    background-image: url("../images/title-background.png");
-    background-position: left 50% top 50%;
-    background-repeat: no-repeat;
+  .contact-page .heading-map {
+    margin-bottom: 2.688rem;
+    line-height: 1.912rem;
   }
 
   .contact-page h1.background-heading {
+    line-height: 2.406rem;
     background-size: 194.42px 75px;
     padding: 1.5rem 1.3rem;
-    margin: -1.5rem -1.3rem 2.875rem -1.3rem;
+    margin: -1.5rem -1.3rem calc(2.875rem - 1.5rem) -1.3rem;
   }
 
-  /*   .contact-page h2.background-heading {
-    background-size: 150px 65px;
-    padding: 1.7rem 1rem;
-    margin: -1.7rem -1rem 2.688rem -1rem;
-  } */
+  .contact-page .wp-block-columns .contact-left-column {
+    margin-bottom: 0;
+  }
 
   .contact-work-wrapper {
     max-width: 337px;
@@ -160,6 +168,9 @@
     width: 337px;
   }
 
+  .contact-work-wrapper .wp-block-create-block-contact-block {
+    margin-top: 1.6rem;
+  }
   .contact-page .wp-block-columns .contact-right-column .bus-wrapper {
     margin-bottom: 10rem;
   }
