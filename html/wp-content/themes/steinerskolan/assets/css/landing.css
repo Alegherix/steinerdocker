@@ -1,6 +1,3 @@
-/* .applyBtn {
-  background: #efecfd;
-} */
 .wp-block-create-block-hero h1.hero-title.hero-title-landing {
   font-size: 29px;
   margin-bottom: 0.5rem;
@@ -140,20 +137,33 @@
   position: relative;
   gap: 1.4rem;
   align-items: center;
+  justify-content: center;
   margin-bottom: 5rem;
   max-width: 1280px;
+  width: 100%;
+}
+
+.lanSec figure.lanBlockImg {
+  height: 270px;
+  width: 100%;
+}
+
+.lanSec figure.lanBlockImg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .lanBlockImg {
   z-index: 10;
-  border-radius: 6px;
-  width: 100%;
-  height: 350px;
+  border-radius: 2px;
+  /* width: 100%;
+  height: 350px; */
 }
 
 .lanBlockImg img {
-  width: 100%;
-  height: 100%;
+  /*  width: 100%;
+  height: 100%; */
 }
 
 .bgImg {
@@ -226,6 +236,35 @@ h2.temaHeader {
 }
 
 @media only screen and (min-width: 768px) {
+  .lanSec figure.lanBlockImg {
+    height: 200px;
+    max-width: 523px;
+    width: 100%;
+  }
+
+  .lanSec figure.lanBlockImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lanSec figure.lanBlockImg {
+    transform: translateY(20px);
+  }
+
+  .lanBlockText h3 {
+    text-align: center;
+  }
+
+  .lanBlockText p {
+    max-width: 500px;
+    min-width: 430px;
+    text-align: center;
+  }
+  .wp-block-create-block-hero.landing-hero {
+    margin-bottom: 1rem;
+  }
+
   .wp-block-create-block-hero.landing-hero .wp-block-cover {
     min-height: 596px;
   }
@@ -260,7 +299,7 @@ h2.temaHeader {
 
   .lanSec {
     flex-direction: row;
-    gap: 3.4rem;
+    /*  gap: 3.4rem; */
     margin-bottom: 90px;
   }
 
@@ -270,7 +309,7 @@ h2.temaHeader {
 
   .reverse {
     flex-direction: row-reverse;
-    padding-left: 3rem;
+    /*  padding-left: 3rem; */
   }
 
   .wheelSection,
@@ -298,4 +337,16 @@ h2.temaHeader {
 .hero-button .wp-block-button__link:hover,
 .holidayBtn a:hover {
   background-color: #cfc8f9 !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .lanSec figure.lanBlockImg {
+    height: 376.29px;
+    max-width: 523px;
+    width: 100%;
+  }
+
+  .lanSec {
+    gap: 3.4rem;
+  }
 }
