@@ -164,7 +164,7 @@ div.wp-block-group.school-kitchen figure img {
   height: 100%;
 }
 
-@media (min-width: 600px/* 767px */) {
+@media (min-width: 600px) {
   /* Styling hero block  */
 
   .wp-block-create-block-hero.about-hero .wp-block-cover {
@@ -226,7 +226,6 @@ div.wp-block-group.school-kitchen figure img {
     margin-bottom: 9rem;
   }
   div.wp-block-group.about-waldorf article {
-    /* margin-bottom: 8.75rem; */
     margin-bottom: 8rem;
   }
   div.wp-block-group.about-waldorf article h2,
