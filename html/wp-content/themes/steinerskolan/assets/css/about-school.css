@@ -221,14 +221,23 @@ div.wp-block-group.school-kitchen figure img {
   div.wp-block-group.about-waldorf {
     margin-top: 10.875rem;
   }
+
+  div.wp-block-group.about-waldorf article:nth-of-type(3) {
+    margin-bottom: 9rem;
+  }
   div.wp-block-group.about-waldorf article {
-    margin-bottom: 8.75rem;
+    /* margin-bottom: 8.75rem; */
+    margin-bottom: 8rem;
   }
   div.wp-block-group.about-waldorf article h2,
   div.wp-block-group.waldorf-party article h3,
   div.wp-block-group.school-kitchen h2 {
     margin-top: 0;
     margin-bottom: 1.188rem;
+  }
+
+  div.wp-block-group.about-waldorf article p {
+    max-width: 456px;
   }
 
   div.wp-block-group.about-waldorf article figure {
@@ -249,6 +258,7 @@ div.wp-block-group.school-kitchen figure img {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   div.wp-block-group.about-waldorf article:nth-of-type(2) {
@@ -272,7 +282,7 @@ div.wp-block-group.school-kitchen figure img {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12.5rem;
+    margin-bottom: 6.5rem;
   }
   div.wp-block-group.waldorf-party
     article.parties-and-celebrations-article
@@ -296,7 +306,7 @@ div.wp-block-group.school-kitchen figure img {
 
   /* Start styling for school kitchen */
   div.wp-block-group.school-kitchen {
-    margin-top: 8.125rem;
+    margin-top: 5rem;
   }
 
   div.wp-block-group.school-kitchen p {

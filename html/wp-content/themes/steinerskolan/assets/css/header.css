@@ -8,6 +8,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 15;
+  border-bottom: 0.03125rem solid #acacac;
 }
 
 .ham {
